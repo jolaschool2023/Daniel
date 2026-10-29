@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jola Robotics | Club de Robótica e Inteligencia Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo nav-tab-btn" data-target="home-view">
+                <i class="fas fa-robot"></i> Jola<span>Robotics</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link nav-tab-btn active" data-target="home-view">Inicio</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="movil-view">Robótica Móvil</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="ia-view">IA & Visión</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="iot-view">IoT & Sensores</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="impresion-view">Impresión 3D</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="quiz-view">Quiz de Robótica</a></li>
+                <li><a href="#" class="nav-link nav-tab-btn" data-target="contact-view">Inscripción</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- APARTADO 1: INICIO (HOME)                  -->
+        <!-- ========================================== -->
+        <section id="home-view" class="hero page-view active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge"><i class="fas fa-sparkles"></i> Club Escolar de Innovación Tecnológica</span>
+                    <h1 class="hero-name">Jola Robotics</h1>
+                    <p class="hero-title">El punto de encuentro para mentes creadoras e ingenieros del mañana</p>
+                    <p class="hero-description">
+                        Explora nuestros diferentes departamentos de especialización. Cada botón te guiará hacia información detallada, temarios de aprendizaje y proyectos avanzados desarrollados en el club.
+                    </p>
+                    <div class="hero-buttons" style="flex-wrap: wrap;">
+                        <button class="btn btn-primary nav-tab-btn" data-target="movil-view">
+                            <i class="fas fa-car"></i> Robótica Móvil
+                        </button>
+                        <button class="btn btn-secondary nav-tab-btn" data-target="ia-view">
+                            <i class="fas fa-brain"></i> IA & Visión Artificial
+                        </button>
+                        <button class="btn btn-secondary nav-tab-btn" data-target="iot-view">
+                            <i class="fas fa-wifi"></i> IoT & Sensores
+                        </button>
+                        <button class="btn btn-secondary nav-tab-btn" data-target="impresion-view">
+                            <i class="fas fa-cube"></i> Impresión 3D
+                        </button>
+                        <button class="btn btn-primary nav-tab-btn" data-target="quiz-view" style="background: linear-gradient(135deg, var(--accent-yellow), var(--accent-pink));">
+                            <i class="fas fa-question-circle"></i> Quiz Interactivo
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO 2: ROBÓTICA MÓVIL                 -->
+        <!-- ========================================== -->
+        <section id="movil-view" class="page-view detail-section">
+            <div class="container">
+                <div class="detail-header">
+                    <span class="detail-tag"><i class="fas fa-car"></i> Departamento de Mecatrónica</span>
+                    <h2 class="section-title">Robótica Móvil y Autónoma</h2>
+                    <p class="section-subtitle">Diseñamos, armamos y programamos vehículos capaces de navegar sin intervención humana en entornos dinámicos.</p>
+                </div>
+
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-compass"></i></div>
+                        <h3>Sistemas de Navegación SLAM</h3>
+                        <p>Los estudiantes aprenden a utilizar LiDAR, ultrasonido y odometría para que los robots mapeen habitaciones y eviten obstáculos en tiempo real utilizando algoritmos de localización simultánea.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Control PID y Motores DC</h3>
+                        <p>Dominio de controladores Proporcionales, Integrales y Derivativos para asegurar que los robots velocistas y seguidores de línea mantengan trayectorias perfectas a máxima velocidad.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Robots de Competencia (Sumo / Laberinto)</h3>
+                        <p>Construcción de chasis de aluminio y fibra de carbono con reductores de alto torque para torneos de sumo robótico y resolución de laberintos complejos (Micromouse).</p>
+                    </div>
+                </div>
+
+                <div class="back-to-home">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                    <button class="btn btn-primary nav-tab-btn" data-target="contact-view">Unirme a este Departamento <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO 3: IA & VISIÓN ARTIFICIAL         -->
+        <!-- ========================================== -->
+        <section id="ia-view" class="page-view detail-section">
+            <div class="container">
+                <div class="detail-header">
+                    <span class="detail-tag"><i class="fas fa-brain"></i> Departamento de Inteligencia Artificial</span>
+                    <h2 class="section-title">IA & Visión Artificial</h2>
+                    <p class="section-subtitle">Dotamos a las máquinas de "ojos" y "cerebros" capaces de reconocer patrones, rostros y tomar decisiones autónomas.</p>
+                </div>
+
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Procesamiento con OpenCV</h3>
+                        <p>Implementación de filtros de color, detección de contornos, seguimiento de objetos y lectura de códigos ArUco utilizando cámaras conectadas a Raspberry Pi y Jetson Nano.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Redes Neuronales y Machine Learning</h3>
+                        <p>Entrenamiento de modelos ligeros de clasificación de imágenes (TensorFlow Lite) para que los robots identifiquen objetos, clasifiquen basura o detecten señales de tránsito.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Procesamiento de Lenguaje Natural (PLN)</h3>
+                        <p>Creación de asistentes de voz locales integrados en robots para que respondan a comandos verbales sin depender de internet.</p>
+                    </div>
+                </div>
+
+                <div class="back-to-home">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                    <button class="btn btn-primary nav-tab-btn" data-target="contact-view">Unirme a este Departamento <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO 4: IOT & SENSORES                 -->
+        <!-- ========================================== -->
+        <section id="iot-view" class="page-view detail-section">
+            <div class="container">
+                <div class="detail-header">
+                    <span class="detail-tag"><i class="fas fa-wifi"></i> Departamento de Conectividad</span>
+                    <h2 class="section-title">IoT & Sistemas Inteligentes</h2>
+                    <p class="section-subtitle">Conectamos el mundo físico con la nube para monitorear y controlar dispositivos desde cualquier parte del planeta.</p>
+                </div>
+
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3>Plataformas Cloud y MQTT</h3>
+                        <p>Envío y recepción de telemetría en tiempo real utilizando protocolos ligeros IoT (MQTT) conectados a tableros web personalizados y bases de datos en la nube.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>ESP32 & NodeMCU</h3>
+                        <p>Programación de microcontroladores con conectividad Wi-Fi y Bluetooth integrada para automatización de hogares, invernaderos y estaciones meteorológicas.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-sliders-h"></i></div>
+                        <h3>Integración de Sensores Industriales</h3>
+                        <p>Calibración y lectura de sensores de gases, calidad del aire, humedad de suelo capacitiva, giroscopios y sensores biométricos.</p>
+                    </div>
+                </div>
+
+                <div class="back-to-home">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                    <button class="btn btn-primary nav-tab-btn" data-target="contact-view">Unirme a este Departamento <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO 5: IMPRESIÓN 3D                   -->
+        <!-- ========================================== -->
+        <section id="impresion-view" class="page-view detail-section">
+            <div class="container">
+                <div class="detail-header">
+                    <span class="detail-tag"><i class="fas fa-cube"></i> Departamento de Fabricación Digital</span>
+                    <h2 class="section-title">Impresión 3D & Diseño CAD</h2>
+                    <p class="section-subtitle">Llevamos las ideas de la pantalla a la realidad mediante modelado paramétrico y manufactura aditiva.</p>
+                </div>
+
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-drafting-compass"></i></div>
+                        <h3>Modelado Paramétrico (Fusion 360 / Blender)</h3>
+                        <p>Aprendizaje de diseño asistido por computadora para crear piezas mecánicas exactas, engranajes, soportes para motores y chasis personalizados.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-print"></i></div>
+                        <h3>Operación y Calibración de Impresoras</h3>
+                        <p>Dominio de parámetros de impresión (temperatura, velocidad, retracción, soportes) utilizando diversos materiales como PLA, PETG y TPU flexible.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Prototipado de Prótesis y Herramientas</h3>
+                        <p>Creación de dispositivos de asistencia mecánica, adaptadores ergonómicos y piezas de repuesto para los robots del club.</p>
+                    </div>
+                </div>
+
+                <div class="back-to-home">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                    <button class="btn btn-primary nav-tab-btn" data-target="contact-view">Unirme a este Departamento <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO NUEVO: QUIZ INTERACTIVO           -->
+        <!-- ========================================== -->
+        <section id="quiz-view" class="page-view detail-section">
+            <div class="container" style="max-width: 800px;">
+                <div class="detail-header" style="margin-bottom: 30px;">
+                    <span class="detail-tag"><i class="fas fa-question-circle"></i> Pon a prueba tus conocimientos</span>
+                    <h2 class="section-title">Quiz de Robótica & IA</h2>
+                    <p class="section-subtitle">Demuestra lo que sabes respondiendo 5 preguntas de opción múltiple. Selecciona una respuesta por pregunta y descubre tu puntuación final.</p>
+                </div>
+
+                <div class="quiz-container" style="background: var(--bg-primary); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border);">
+                    <!-- Pantalla de Inicio del Quiz -->
+                    <div id="quiz-start-screen" style="text-align: center; padding: 20px 0;">
+                        <div style="font-size: 4rem; color: var(--accent-pink); margin-bottom: 20px;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--text-primary);">¿Listo para el desafío?</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 30px; font-size: 1.05rem;">
+                            El quiz consta de 5 preguntas sobre robótica móvil, inteligencia artificial, IoT e impresión 3D. Cada pregunta tiene 4 opciones y solo una es correcta.
+                        </p>
+                        <button id="startQuizBtn" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px 36px;">
+                            <i class="fas fa-play"></i> Comenzar Quiz
+                        </button>
+                    </div>
+
+                    <!-- Pantalla de Preguntas (Quiz activo) -->
+                    <div id="quiz-question-screen" style="display: none;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 15px; border-bottom: 1px solid var(--border);">
+                            <span id="quiz-progress-text" style="font-weight: 700; color: var(--accent-pink); font-size: 1.05rem;">Pregunta 1 de 5</span>
+                            <span id="quiz-score-tracker" style="font-weight: 600; color: var(--text-secondary); font-size: 0.95rem;">Puntuación: 0</span>
+                        </div>
+
+                        <h3 id="quiz-question-title" style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; line-height: 1.5;">
+                            <!-- Aquí se inyecta la pregunta -->
+                        </h3>
+
+                        <div id="quiz-options-container" style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px;">
+                            <!-- Aquí se inyectan las 4 opciones -->
+                        </div>
+
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button id="quiz-next-btn" class="btn btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">
+                                Siguiente Pregunta <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pantalla de Resultados -->
+                    <div id="quiz-result-screen" style="display: none; text-align: center; padding: 20px 0;">
+                        <div style="font-size: 4rem; color: var(--accent-yellow); margin-bottom: 20px;">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--text-primary);">¡Quiz Completado!</h3>
+                        <p id="quiz-final-score-text" style="font-size: 1.25rem; font-weight: 700; color: var(--accent-pink); margin-bottom: 16px;">
+                            Tu puntuación final es: 5 de 5
+                        </p>
+                        <p id="quiz-feedback-message" style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                            ¡Excelente trabajo! Tienes madera de ingeniero en robótica.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 16px;">
+                            <button id="restartQuizBtn" class="btn btn-primary">
+                                <i class="fas fa-redo"></i> Intentar Nuevamente
+                            </button>
+                            <button class="btn btn-secondary nav-tab-btn" data-target="home-view">
+                                <i class="fas fa-home"></i> Volver al Inicio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- JUEGO 3 EN RAYA VS IA ROBÓTICA             -->
+                <!-- ========================================== -->
+                <div class="quiz-container" style="background: var(--bg-primary); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); margin-top: 40px;">
+                    <div style="text-align: center; margin-bottom: 24px;">
+                        <span class="detail-tag"><i class="fas fa-gamepad"></i> Sala de Juegos</span>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 8px; color: var(--text-primary);">3 en Raya Interactivo</h3>
+                        <p id="ttt-status" style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 600; margin-bottom: 16px;">
+                            Tu turno (X). ¡Comienza el duelo!
+                        </p>
+
+                        <!-- Controles de Modo y Dificultad -->
+                        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <div style="display: flex; gap: 8px; align-items: center; background: var(--bg-secondary); padding: 6px 14px; border-radius: 12px; border: 1px solid var(--border);">
+                                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary);">Modo:</span>
+                                <button id="ttt-mode-ai" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.85rem;">vs IA</button>
+                                <button id="ttt-mode-2p" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">2 Jugadores</button>
+                            </div>
+                            <div id="ttt-difficulty-container" style="display: flex; gap: 8px; align-items: center; background: var(--bg-secondary); padding: 6px 14px; border-radius: 12px; border: 1px solid var(--border);">
+                                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary);">Dificultad IA:</span>
+                                <button class="ttt-diff-btn btn btn-primary" data-diff="easy" style="padding: 6px 10px; font-size: 0.8rem;">Fácil</button>
+                                <button class="ttt-diff-btn btn btn-secondary" data-diff="medium" style="padding: 6px 10px; font-size: 0.8rem;">Media</button>
+                                <button class="ttt-diff-btn btn btn-secondary" data-diff="hard" style="padding: 6px 10px; font-size: 0.8rem;">Imparable</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ttt-board" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 320px; margin: 0 auto 24px;">
+                        <button class="ttt-cell" data-index="0" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="1" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="2" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="3" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="4" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="5" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="6" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="7" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                        <button class="ttt-cell" data-index="8" style="aspect-ratio: 1; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 14px; font-size: 2.5rem; font-weight: 800; color: var(--accent-pink); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition);"></button>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button id="ttt-reset" class="btn btn-secondary">
+                            <i class="fas fa-redo"></i> Reiniciar Partida
+                        </button>
+                    </div>
+                </div>
+
+                <div class="back-to-home" style="margin-top: 40px;">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- APARTADO 6: INSCRIPCIÓN / CONTACTO         -->
+        <!-- ========================================== -->
+        <section id="contact-view" class="contact page-view">
+            <div class="container">
+                <div class="detail-header">
+                    <span class="detail-tag"><i class="fas fa-user-plus"></i> ¡Forma Parte!</span>
+                    <h2 class="section-title">Inscripción a Jola Robotics</h2>
+                    <p class="section-subtitle">Elige tu área de interés y únete a nuestra comunidad de creadores tecnológicos.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>¿Por qué unirte a Jola Robotics?</h3>
+                        <p>
+                            Tendrás acceso libre al laboratorio, mentorías especializadas, componentes electrónicos, impresoras 3D y la oportunidad de competir en torneos nacionales e internacionales.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Laboratorio Jola - Sala de Tecnología 102</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Martes y Jueves - 15:30 a 17:30 hrs</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>contacto@jolarobotics.edu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu.correo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Departamento de Interés</label>
+                            <select id="department" class="form-control-select" style="width: 100%; padding: 14px 18px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 14px; font-size: 1rem; color: var(--text-primary); font-family: inherit;">
+                                <option value="movil">Robótica Móvil</option>
+                                <option value="ia">IA & Visión Artificial</option>
+                                <option value="iot">IoT & Sensores</option>
+                                <option value="3d">Impresión 3D & Diseño</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Cuéntanos sobre ti</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="¿Por qué te apasiona la robótica?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>¡Enviar Solicitud de Inscripción!</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="back-to-home" style="margin-top: 40px;">
+                    <button class="btn btn-secondary nav-tab-btn" data-target="home-view"><i class="fas fa-arrow-left"></i> Volver al Inicio</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WIDGET FLOTANTE DE IA CON MEMORIA DE LA WEB -->
+    <div class="ai-widget-container">
+        <button id="aiToggleBtn" class="ai-float-btn" aria-label="Abrir Asistente IA">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            <span>Asistente Jola AI</span>
+        </button>
+
+        <div id="aiChatWindow" class="ai-chat-window">
+            <div class="ai-chat-header">
+                <div class="ai-header-title">
+                    <i class="fas fa-robot"></i>
+                    <span>Jola AI (Asistente Inteligente)</span>
+                </div>
+                <button id="aiCloseBtn" class="ai-close-btn">&times;</button>
+            </div>
+            <div id="aiChatMessages" class="ai-chat-messages">
+                <div class="ai-msg bot">
+                    ¡Hola! Soy <strong>Jola AI</strong> 🧠. Conozco todo sobre los departamentos de nuestro club (Robótica Móvil, IA, IoT, Impresión 3D), horarios e inscripciones. Dime, <strong>¿qué estás buscando o qué te gustaría aprender hoy?</strong>
+                </div>
+            </div>
+            <div class="ai-chat-input-area">
+                <input type="text" id="aiChatInput" placeholder="Pregúntame o dime qué necesitas..." autocomplete="off">
+                <button id="aiChatSend" class="btn-ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Jola Robotics. Club de Robótica e Inteligencia Artificial.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
